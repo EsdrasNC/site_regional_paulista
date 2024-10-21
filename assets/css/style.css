@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(25, 25, 25);
+    margin: 0;
+    height: 580vh;
+}
+/******espaçamento*******/
+.espaçamento_01{
+    width: 100%;
+    height: 20px;
+}
+/******header*******/
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    list-style-type: none;
+    padding: 0;
+}
+header{
+    background-color: aliceblue;
+    margin: 0;
+    border-radius: 30px;
+    height: 50px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head_page_inicial{
+    background-color: aqua;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+/******follow*******/
+.follow_us{
+    background-color: rgb(157, 255, 0);
+    width: 100%;
+    height: 700px;
+}
+/******versiculo*******/
+.versicle_bible{
+    background-color: rgb(157, 255, 0);
+    width: 100%;
+    height: 700px;
+}
+/******foto evento paralax*******/
+.pic_church_event{
+    background-color: rgb(255, 58, 9);
+    width: 100%;
+    height: 700px;
+}
+/******localização igrejas*******/
+.church_loc {
+    background-color: rgb(157, 255, 0);
+    max-width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bloco_igreja_01 {
+    background-color: aliceblue;
+    height: 150px;
+    width: 200px;
+}
+
+.campinas_church {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divisão_igrejas_01 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}

@@ -9,6 +9,7 @@ body{
 .espaçamento_01{
     width: 100%;
     height: 30px;
+
 }
 /******header*******/
 a{
@@ -52,7 +53,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 /******versiculo*******/
 .versicle_bible{

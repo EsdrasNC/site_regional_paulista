@@ -1,103 +1,134 @@
-body{
-    background-color: #1a2330;    
-    margin: 0;
-    height: 580vh;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+body {
+  background-color: #1a2330;
+  margin: 0;
+  height: 400vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
+}
+.church_loc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.linha-fina {
+  width: 80%;
+  border: none;
+  height: 0.5px;
+  background-color: #ffffff40;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.church_loc2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.linha-fina2 {
+  width: 10%;
+  border: none;
+  height: 0.5px;
+  background-color: #ffffff40;
+  display: flex;
+  justify-content: center;
+  transform: rotate(90deg);
+  position: absolute;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
+}
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
 }
 /******espaçamento*******/
-.espaçamento_01{
-    width: 100%;
-    height: 30px;
-
+.espaçamento_01 {
+  width: 100%;
+  height: 30px;
 }
 /******header*******/
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
 }
-ul{
-    display: flex;
-    flex-direction: row;
-    gap: 45px;
-    list-style-type: none;
-    padding: 0;
+ul, li {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
 }
-header{
-    background-color: aliceblue;
-    margin: 0;
-    border-radius: 30px;
-    height: 50px;
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header {
+  background-color: rgb(43, 42, 61);
+  margin: 0;
+  border-radius: 30px;
+  height: 50px;
+  width: 70%;
+  top: 20px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
-.head_page_inicial{
-    background-color: aqua;
-    width: 100%;
-    height: 900px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
+.head_page_inicial {
+  background-color: aqua;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 /******follow*******/
-.follow_us{
-    background-image: url(../image/siga.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    top: 20px;
-    width: 100%;
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.follow_us {
+  background-image: url(../image/siga.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 20px;
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /******versiculo*******/
-.versicle_bible{
-    background-image: url(../image/versiculo_site.png);
-    width: 100%;
-    height: 800px;
-    background-size: 100%;
-    background-repeat: no-repeat;
+.versicle_bible {
+  background-image: url(../image/versiculo_site.png);
+  width: 100%;
+  height: 800px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 /******foto evento paralax*******/
-.pic_church_event{
-    background-color: rgb(255, 58, 9);
-    width: 100%;
-    height: 700px;
-    background-image: url(../image/FOTO_SITE.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+.pic_church_event {
+  background-color: rgb(255, 58, 9);
+  width: 100%;
+  height: 700px;
+  background-image: url(../image/FOTO_SITE.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 /******localização igrejas*******/
-.church_loc {
-    background-color: rgb(157, 255, 0);
-    max-width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.bloco_igreja_01 {
-    background-color: aliceblue;
-    height: 80px;
-    width: 200px;
-    font-size: 20px;
-}
-
-.campinas_church {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.divisão_igrejas_01 {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    flex-wrap: wrap; 
-    justify-content: center; 
+.igrejas_conv_direc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
 }

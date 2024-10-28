@@ -90,7 +90,7 @@
 }
 
 .menu .item:hover .link {
-  color: #000000;
+  color: #ffffff;
   border-radius: 16px 16px 0 0;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .menu .item:hover .link svg {
-  fill: #000000;
+  fill: #ffffff;
   transform: rotate(-180deg);
 }
 

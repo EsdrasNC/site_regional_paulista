@@ -221,10 +221,9 @@ header {
     display: flex;
     justify-content: center;
     padding: 1.5rem 0rem;
-
     border-radius: 30px;
     height: 10px;
-    width: 75%;
+    width: 100%;
   }
 
   .logo {
@@ -246,7 +245,7 @@ header {
     background-color: rgb(43, 42, 61);
     border-radius: 30px;
     height: 55px;
-    width: 100%;
+    width: 85%;
   }
 
   .nav-list ul {
@@ -261,7 +260,7 @@ header {
 
   .nav-link {
     text-decoration: none;
-    font-size: 1.15rem;
+    font-size: 13px;
     color: #fff;
     font-weight: 400;
   }
@@ -431,6 +430,11 @@ header {
     width: 100%;
   }
   .open {
-    display: block;
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
   }
 }

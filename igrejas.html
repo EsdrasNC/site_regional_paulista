@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="./assets/css/font.css" />
     <link rel="stylesheet" href="./assets/css/buttons.css" />
     <link rel="stylesheet" href="./assets/css/cards.css" />
+    <link rel="stylesheet" href="./assets/css/maps.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <style>
+        /* Define a altura e a largura do mapa */
+        #map {
+            height: 500px; /* Altura do mapa */
+            width: 100%;   /* Largura do mapa */
+        }
+    </style>
+    
     <script src="./assets/js/script.js"></script>
     <title>Promessa Paulista</title>
   </head>
@@ -128,71 +141,188 @@
     </header>
     <div class="head_page_inicial"></div>
     </section>
-    <div class="main_wrapper">
-      <div class="main">
-        <div class="antenna">
-          <div class="antenna_shadow"></div>
-          <div class="a1"></div>
-          <div class="a1d"></div>
-          <div class="a2"></div>
-          <div class="a2d"></div>
-          <div class="a_base"></div>
-        </div>
-        <div class="tv">
-          <div class="cruve">
-            <svg
-              xml:space="preserve"
-              viewBox="0 0 189.929 189.929"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              class="curve_svg"
-            >
-              <path
-                d="M70.343,70.343c-30.554,30.553-44.806,72.7-39.102,115.635l-29.738,3.951C-5.442,137.659,11.917,86.34,49.129,49.13
-            C86.34,11.918,137.664-5.445,189.928,1.502l-3.95,29.738C143.041,25.54,100.895,39.789,70.343,70.343z"
-              ></path>
-            </svg>
-          </div>
-          <div class="display_div">
-            <div class="screen_out">
-              <div class="screen_out1">
-                <div class="screen">
-                  <span class="notfound_text"> Em construção</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="lines">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <div class="buttons_div">
-            <div class="b1"><div></div></div>
-            <div class="b2"></div>
-            <div class="speakers">
-              <div class="g1">
-                <div class="g11"></div>
-                <div class="g12"></div>
-                <div class="g13"></div>
-              </div>
-              <div class="g"></div>
-              <div class="g"></div>
-            </div>
-          </div>
-        </div>
-        <div class="bottom">
-          <div class="base1"></div>
-          <div class="base2"></div>
-          <div class="base3"></div>
-        </div>
-      </div>
-      <div class="text_404">
-        <div class="text_4041">4</div>
-        <div class="text_4042">0</div>
-        <div class="text_4043">4</div>
-      </div>
-    </div>
+    <div id="mapa_church">
+      <div id="map"></div>
+
+      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+      <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+      <script>
+          // Inicializa o mapa
+          const map = L.map('map').setView([-22.895222, -47.0310345], 8);
+  
+          // Adiciona a camada de tiles do OpenStreetMap
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              maxZoom: 19,
+              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+  
+          // Adiciona um marcador
+          //inicio campinas
+              L.marker([-22.8171187,-47.0948954]).addTo(map)
+              .bindPopup('Promessa Barão')
+              .openPopup();
+              L.marker([-22.7338872,-47.0805486]).addTo(map)
+              .bindPopup('Promessa Piracambaia')
+              .openPopup();
+              L.marker([-22.9698782, -47.0850903]).addTo(map)
+              .bindPopup('Promessa Jd. Aeroporto')
+              .openPopup();
+              L.marker([-22.9209405, -47.0691493]).addTo(map)
+              .bindPopup('Promessa Pq. Itália')
+              .openPopup();
+              L.marker([-22.8552408, -47.0533871]).addTo(map)
+              .bindPopup('Radiação Campinas')
+              .openPopup();
+  //inicio sumaré
+  L.marker([-22.8508362,-47.1939702]).addTo(map)
+              .bindPopup('Promessa Bom Retiro')
+              .openPopup();
+              L.marker([-22.8057372,-47.2026482]).addTo(map)
+              .bindPopup('Promessa Jd. Amélia')
+              .openPopup();
+              L.marker([-22.8313691,-47.2029076]).addTo(map)
+              .bindPopup('Promessa Jd. Maracanã')
+              .openPopup();
+              
+              L.marker([-22.8076575,-47.2793573]).addTo(map)
+              .bindPopup('Promessa Jd. Primavera')
+              .openPopup();
+              L.marker([-22.8053038,-47.2210658]).addTo(map)
+              .bindPopup('Promessa Nova Veneza')
+              .openPopup();
+              L.marker([-22.8993081,-47.2424291]).addTo(map)
+              .bindPopup('Promessa Jd. Amanda')
+              .openPopup();
+  //inicio Jundiai
+  L.marker([-23.1523068,-46.9962662]).addTo(map)
+              .bindPopup('Promessa Jd. Tulipas')
+              .openPopup();
+              L.marker([-23.2217071,-46.939961]).addTo(map)
+              .bindPopup('Promessa Vila Esperança')
+              .openPopup();
+  //inicio Paulínia
+  L.marker([-22.7517476,-47.1898328]).addTo(map)
+              .bindPopup('Promessa Paulínia')
+              .openPopup();
+  //inicio Atibaia
+  L.marker([-23.1399878,-46.5848629]).addTo(map)
+              .bindPopup('Promessa Atibaia')
+              .openPopup();
+  //inicio Itatiba
+  L.marker([-23.0070344,-46.8408618]).addTo(map)
+              .bindPopup('Promessa Itatiba')
+              .openPopup();
+  //inicio Vinhedo
+  L.marker([-23.046004,-47.0090925]).addTo(map)
+              .bindPopup('Promessa Vinhedo')
+              .openPopup();
+  //inicio Amparo
+  L.marker([-22.7039357,-46.7831865]).addTo(map)
+              .bindPopup('Promessa Amparo')
+              .openPopup();
+  //inicio Monte Alegre Do Sul
+  L.marker([-22.6998589,-46.6743792]).addTo(map)
+              .bindPopup('Promessa Monte Alegre Do Sul')
+              .openPopup();
+  //inicio Bragança Paulista
+  L.marker([-22.9123928,-46.5556345]).addTo(map)
+              .bindPopup('Promessa Bragança Paulista')
+              .openPopup();
+  //inicio Hortolândia
+  L.marker([-22.86297,-47.2248607]).addTo(map)
+              .bindPopup('Promessa Hortolândia')
+              .openPopup();
+  //inicio Pedreira
+  L.marker([-22.7235802,-46.8991535]).addTo(map)
+              .bindPopup('Promessa Pedreira')
+              .openPopup();
+  //inicio Jaguariúna
+  L.marker([-22.6905321,-46.9907396]).addTo(map)
+              .bindPopup('Promessa Jaguariúna')
+              .openPopup();
+  //inicio Mogi Mirim
+  L.marker([-22.4387572,-46.9415981]).addTo(map)
+              .bindPopup('Promessa Mogi Mirim')
+              .openPopup();
+  //inicio Boituva
+  L.marker([-23.2814586,-47.6667934]).addTo(map)
+              .bindPopup('Promessa Boituva')
+              .openPopup();
+  //inicio Itapetininga
+  L.marker([-23.5817835,-48.0476502]).addTo(map)
+              .bindPopup('Promessa Itapetininga')
+              .openPopup();
+  //inicio Sorocaba
+              L.marker([-23.4355024,-47.4670722]).addTo(map)
+              .bindPopup('Promessa Pq. Vitoria Régia')
+              .openPopup();
+              L.marker([-23.4694516,-47.5010793]).addTo(map)
+              .bindPopup('Promessa Vila Helena')
+              .openPopup();
+              L.marker([-23.5090484,-47.461434]).addTo(map)
+              .bindPopup('Radiação Sorocaba')
+              .openPopup();
+
+  //inicio Votorantin
+  L.marker([-23.5265836,-47.4328309]).addTo(map)
+              .bindPopup('Promessa Votorantim')
+              .openPopup();
+ //inicio Itu
+  L.marker([-23.336021,-47.4037986]).addTo(map)
+              .bindPopup('Promessa Jd. Das Rosas')
+              .openPopup();
+              L.marker([-23.3905995,-47.487675]).addTo(map)
+              .bindPopup('Promessa Cidade Nova')
+              .openPopup();
+//inicio Indaiatuba
+  L.marker([-23.1247409,-47.3033087]).addTo(map)
+              .bindPopup('Promessa Indaiatuba')
+              .openPopup();
+;
+//inicio Americana
+  L.marker([-22.7254304,-47.3788634]).addTo(map)
+              .bindPopup('Promessa Americana')
+              .openPopup();
+//inicio Santa Bárbara D'oeste
+  L.marker([-22.7340719,-47.5329796]).addTo(map)
+              .bindPopup('Promessa Santa Bárbara Doeste')
+              .openPopup();
+//inicio Piracicaba
+  L.marker([-22.7185971,-47.7509614]).addTo(map)
+              .bindPopup('Promessa Piracicaba')
+              .openPopup();
+
+//inicio Rio Claro
+  L.marker([-22.385428,-47.5707952]).addTo(map)
+              .bindPopup('Promessa Rio Claro')
+              .openPopup();
+//inicio Cosmópolis
+  L.marker([-22.621536,-47.1666845]).addTo(map)
+              .bindPopup('Promessa Cosmópolis')
+              .openPopup();
+//inicio Sertãozinho
+  L.marker([-21.1192877,-48.0277759]).addTo(map)
+              .bindPopup('Promessa Sertãozinho')
+              .openPopup();
+//inicio Ribeirão Preto
+  L.marker([-21.1822345,-47.7724837]).addTo(map)
+              .bindPopup('Promessa Jd. Itaporã')
+              .openPopup();
+              L.marker([-21.1924879,-47.8362226]).addTo(map)
+              .bindPopup('Promessa Vila Virginia')
+              .openPopup();
+  
+          // Adiciona o controle de geocodificação
+          const controlSearch = L.Control.geocoder({
+              defaultMarkGeocode: false
+          }).on('markgeocode', function(e) {
+              const latlng = e.geocode.center;
+              L.marker(latlng).addTo(map)
+                  .bindPopup(e.geocode.name)
+                  .openPopup();
+              map.setView(latlng, 13);
+          }).addTo(map);
+      </script>
+      </div>  
   </body>
 </html>

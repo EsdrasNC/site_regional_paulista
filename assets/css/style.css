@@ -64,7 +64,8 @@ a {
   height: 30px;
 }
 /******header*******/
-ul, li {
+ul,
+li {
   display: flex;
   flex-direction: row;
   gap: 45px;
@@ -72,19 +73,7 @@ ul, li {
   padding: 0;
   align-items: center;
 }
-header {
-  background-color: rgb(43, 42, 61);
-  margin: 0;
-  border-radius: 30px;
-  height: 50px;
-  width: 70%;
-  top: 20px;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
+
 .head_page_inicial {
   background-color: aqua;
   width: 100%;
@@ -93,6 +82,19 @@ header {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+}
+.nav-list {
+  width: 100%;
+  height: 50;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(43, 42, 61);
+  border-radius: 30px;
+  height: 55px;
+  width: 100%;
 }
 /******follow*******/
 .follow_us {
@@ -129,24 +131,84 @@ header {
   align-items: flex-start;
   width: 80%;
 }
-.hamburger {
+/******navegação barra*******/
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  top: 20px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0rem;
+
+  border-radius: 30px;
+  height: 10px;
+  width: 85%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  color: #fff;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.login-button button {
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #0187a7;
+}
+
+.login-button button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
   display: none;
 }
 
-@media (max-width: 1366px) {  
-  body {
-    background-color: #1a2330;
-    margin: 0;
-    height: 550vh;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-  }
+.mobile-menu {
+  display: none;
+}
+.menuToggle {
+  display: none;
+}
+
+@media (max-width: 1366px) {
   header {
-    background-color: rgb(43, 42, 61);
-    margin: 0;
-    border-radius: 30px;
-    height: 50px;
-    width: 85%;
+    width: 100%;
+    margin: 0 auto;
     top: 20px;
     position: fixed;
     display: flex;
@@ -154,16 +216,79 @@ header {
     justify-content: center;
     z-index: 9999;
   }
-  .head_page_inicial {
-    background-color: aqua;
-    width: 100%;
-    height: 800px;
+
+  .nav-bar {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem 0rem;
+
+    border-radius: 30px;
+    height: 10px;
+    width: 75%;
+  }
+
+  .logo {
+    display: flex;
     align-items: center;
   }
-  ul, li {
+
+  .logo h1 {
+    color: #fff;
+  }
+  .nav-list {
+    width: 100%;
+    height: 50;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(43, 42, 61);
+    border-radius: 30px;
+    height: 55px;
+    width: 100%;
+  }
+
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .nav-item {
+    margin: 0 auto;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+  }
+
+  .login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  ul,
+  li {
     display: flex;
     flex-direction: row;
     gap: 45px;
@@ -192,38 +317,120 @@ header {
     align-items: center;
   }
   /******versiculo*******/
-.versicle_bible {
-  background-image: url(../image/versiculo_site.png);
-  width: 100%;
-  height: 700px;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  .versicle_bible {
+    background-image: url(../image/versiculo_site.png);
+    width: 100%;
+    height: 700px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  /******foto evento paralax*******/
+  .pic_church_event {
+    width: 100%;
+    height: 700px;
+    background-image: url(../image/FOTO_SITE.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  /******localização igrejas*******/
+  .igrejas_conv_direc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
 }
-/******foto evento paralax*******/
-.pic_church_event {
-  width: 100%;
-  height: 700px;
-  background-image: url(../image/FOTO_SITE.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-/******localização igrejas*******/
-.igrejas_conv_direc {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 80%;
-}
-}
-@media (max-width: 768px) {
-.hamburger{
-  position: absolute;
-  z-index: 100000;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.header {
-  display: none;
-}
+@media screen and (max-width: 730px) {
+  .menuToggle {
+    position: absolute;
+    z-index: 100000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-list {
+    display: none;
+  }
+  .mobile-menu-icon {
+    cursor: pointer;
+  }
+
+  .mobile-menu-icon input {
+    display: none;
+  }
+
+  .mobile-menu-icon svg {
+    height: 3em;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+
+  .mobile-menu-icon input:checked + svg {
+    transform: rotate(-45deg);
+  }
+
+  .mobile-menu-icon input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+  .login-button {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px; /* Ajuste conforme necessário */
+    right: 0;
+    width: 538px; /* Ajuste conforme necessário */
+    background-color: #333; /* Cor de fundo do menu */
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+  }
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+    display: flex;
+    padding-top: 1.2rem;
+  }
+  .mobile-menu .login-button {
+    display: block;
+    padding: 1rem 2rem;
+  }
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+  .open {
+    display: block;
+  }
 }

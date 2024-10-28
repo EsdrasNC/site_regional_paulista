@@ -90,7 +90,7 @@
 }
 
 .menu .item:hover .link {
-  color: #000000;
+  color: #ffffff;
   border-radius: 16px 16px 0 0;
 }
 
@@ -100,7 +100,7 @@
 }
 
 .menu .item:hover .link svg {
-  fill: #000000;
+  fill: #ffffff;
   transform: rotate(-180deg);
 }
 
@@ -110,12 +110,12 @@
 }
 
 .submenu .submenu-link {
-    display: block;
-    padding: 12px 20px;
-    width: 70%;
-    position: relative;
-    text-align: center;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  display: block;
+  padding: 12px 20px;
+  width: 70%;
+  position: relative;
+  text-align: center;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .submenu .submenu-item:last-child .submenu-link {
@@ -143,4 +143,26 @@
 
 .submenu .submenu-link:hover {
   color: #ffffff;
+}
+/***********botão hamburguer************/
+
+
+/* Menu oculto em telas menores */
+.header_nav ul.menu {
+  display: flex;
+  gap: 20px;
+}
+
+/* Comportamento para telas menores */
+@media (max-width: 768px) {
+}
+@media (max-width: 1366px) {
+  .menu {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #ffffff;
+    width: fit-content;
+    display: flex;
+    list-style: none;
+  }
 }

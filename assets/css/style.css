@@ -609,13 +609,5 @@ header {
     background-repeat: no-repeat;
     margin: 0 auto;
   }
-  .head_page_inicial {
-    background-color: rgba(0, 255, 255, 0);
-    background-image: url(../image/igrejas.png);
-    background-position: center;
-    background-size: cover, contain;
-    background-repeat: no-repeat;
-    height: 73%;
-    width: 100vw;
-  }
+
 }

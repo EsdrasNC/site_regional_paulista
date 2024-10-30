@@ -42,6 +42,27 @@ body {
     width: 100vw;
   }
 }
+@media (max-width: 500px) {
+  body {
+    width: 100vw;
+    height: 138vh;
+
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    margin: 0 auto;
+    background-color: #0d1e2d;
+  }
+  .head_page_inicial {
+    background-color: #0d1e2d;
+    background-image: url(../image/vertical/igrejas_vertical.png);
+    background-position: center;
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    height: 73%;
+    width: 100vw;
+  }
+}
 @media (max-width: 1366px) {
   body {
     width: 100vw;

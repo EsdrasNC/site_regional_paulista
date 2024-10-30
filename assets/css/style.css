@@ -1,7 +1,7 @@
 body {
   background-color: #1a2330;
   margin: 0;
-  height: 400vh;
+  height: 360vh;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -58,6 +58,7 @@ a {
   color: rgb(255, 255, 255);
   font-size: 15px;
 }
+
 /******espaçamento*******/
 .espaçamento_01 {
   width: 100%;
@@ -148,10 +149,9 @@ header {
   display: flex;
   justify-content: center;
   padding: 1.5rem 0rem;
-
   border-radius: 30px;
-  height: 10px;
-  width: 85%;
+  height: 7px;
+  width: 70%;
 }
 
 .logo {
@@ -175,7 +175,7 @@ header {
 
 .nav-link {
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: 0.9  rem;
   color: #fff;
   font-weight: 400;
 }
@@ -203,6 +203,21 @@ header {
 }
 .menuToggle {
   display: none;
+}
+.footer_geral{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.img_footer{
+  width: 45%;
+  height: 100px;
+  background-image: url(../image/logotipo_paulista_branco.png);
+  background-size: 15%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 @media (max-width: 1366px) {

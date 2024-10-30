@@ -175,7 +175,7 @@ header {
 
 .nav-link {
   text-decoration: none;
-  font-size: 0.9  rem;
+  font-size: 0.9 rem;
   color: #fff;
   font-weight: 400;
 }
@@ -183,7 +183,7 @@ header {
 .login-button button {
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: #0187a7;
 }
 
@@ -204,22 +204,51 @@ header {
 .menuToggle {
   display: none;
 }
-.footer_geral{
+.footer_geral {
   width: 100%;
   height: 50px;
   display: flex;
   flex-direction: row;
 }
-
-.img_footer{
-  width: 45%;
-  height: 100px;
-  background-image: url(../image/logotipo_paulista_branco.png);
-  background-size: 15%;
-  background-repeat: no-repeat;
+.controler_footer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
   margin: 0 auto;
 }
 
+.img_footer {
+  width: 73%;
+  height: 100px;
+  background-image: url(../image/logotipo_paulista_branco.png);
+  background-size: 17%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+@media (max-width: 1700px) {
+  .nav-list {
+    width: 100%;
+    height: 50;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(43, 42, 61);
+    border-radius: 30px;
+    height: 55px;
+    width: 100%;
+  }
+  a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+  }
+}
 @media (max-width: 1366px) {
   header {
     width: 100%;
@@ -238,7 +267,7 @@ header {
     padding: 1.5rem 0rem;
     border-radius: 30px;
     height: 10px;
-    width: 100%;
+    width: 83%;
   }
 
   .logo {
@@ -260,7 +289,7 @@ header {
     background-color: rgb(43, 42, 61);
     border-radius: 30px;
     height: 55px;
-    width: 85%;
+    width: 100%;
   }
 
   .nav-list ul {
@@ -278,20 +307,6 @@ header {
     font-size: 13px;
     color: #fff;
     font-weight: 400;
-  }
-
-  .login-button button {
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #0187a7;
-  }
-
-  .login-button button a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
   }
 
   .mobile-menu-icon {
@@ -354,7 +369,7 @@ header {
     width: 80%;
   }
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
   .menuToggle {
     position: absolute;
     z-index: 100000;
@@ -451,5 +466,26 @@ header {
     flex-direction: column;
     align-content: center;
     align-items: center;
+  }
+  .footer_geral {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  .controler_footer {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .img_footer {
+    width: 73%;
+    height: 100px;
+    background-image: url(../image/logotipo_paulista_branco.png);
+    background-size: 42%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
   }
 }

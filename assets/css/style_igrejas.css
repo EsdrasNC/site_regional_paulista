@@ -1,20 +1,50 @@
 body {
-  height: 138vh;
+  width: 100vw; /* largura da viewport */
+  height: 138vh; /* altura da viewport */
+  background-color: #333;
 }
 
 .head_page_inicial {
   background-color: rgba(0, 255, 255, 0);
   background-image: url(../image/igrejas.png);
-  background-size: 100%;
+  background-position: center;
+  background-size: cover, contain;
   background-repeat: no-repeat;
-  height: 650px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
+  height: 60%;
+  width: 100vw;
 }
-.mapa_church{
+.mapa_church {
   width: 100%;
   height: 300vh;
 }
-
+@media screen and (max-width: 768px) {
+  body {
+    height: 138vh;
+  }
+  .mapa_church {
+    width: 100%;
+    height: 300vh;
+  }
+}
+@media (max-width: 1366px) {
+  body {
+    width: 100vw;
+    height: 138vh;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1600px) {
+  body {
+    width: 100vw;
+    height: 138vh;
+    background-color: #333;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    margin: 0 auto;
+  }
+}

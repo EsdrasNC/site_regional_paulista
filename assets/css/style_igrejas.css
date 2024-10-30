@@ -26,12 +26,12 @@ body {
     height: 300vh;
   }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 390px) {
   body {
     height: 138vh;
   }
   .mapa_church {
-    width: 100%;
+    width: 80%;
     height: 300vh;
   }
   .head_page_inicial {

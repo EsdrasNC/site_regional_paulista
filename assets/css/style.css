@@ -1,7 +1,7 @@
 body {
   background-color: #1a2330;
   margin: 0;
-  height: 360vh;
+  height: 390vh;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -494,7 +494,7 @@ header {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
   .menuToggle {
     position: absolute;
     z-index: 100000;

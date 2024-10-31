@@ -650,7 +650,7 @@ header {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 720px) {
   .menuToggle {
     position: absolute;
     z-index: 100000;
@@ -766,7 +766,7 @@ header {
     width: 83%;
     height: 40px;
     background-image: url(../image/logotipo_paulista_branco.png);
-    background-size: 100%;
+    background-size: 37%;
     background-repeat: no-repeat;
     margin: 0 auto;
   }

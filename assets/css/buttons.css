@@ -258,6 +258,25 @@
     list-style: none;
 }
 }
+@media (max-width: 1722px) {
+  .menu {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #ffffff;
+    width: fit-content;
+    display: flex;
+    list-style: none;
+  }
+  .wrapper {
+    display: flex;
+    list-style: none;
+    height: 25px;
+    width: 110%;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1366px) {
   .menu {
     font-size: 13px;

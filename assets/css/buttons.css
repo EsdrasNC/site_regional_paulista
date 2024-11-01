@@ -158,7 +158,7 @@
   display: flex;
   list-style: none;
   height: 25px;
-  width: 110%;
+  width: 100%;
   font-family: "Poppins", sans-serif;
   justify-content: center;
 }
@@ -238,7 +238,7 @@
   background: #e4405f;
   color: #fff;
 }
-.botao_social_media{
+.botao_social_media {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -247,4 +247,45 @@
   color: rgb(0, 0, 0);
   font-size: 15px;
 }
-/* Comportamento para telas menores */
+@media (max-width: 767px) {
+}
+/* Responsividade para notebooks */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .menu {
+    font-size: 10px;
+    line-height: 1.6;
+    color: #ffffff;
+    width: fit-content;
+    display: flex;
+    list-style: none;
+  }
+  a {
+    font-size: 10px;
+  }
+  .login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 10px;
+  }
+}
+/* Responsividade para monitores maiores */
+@media (min-width: 1200px) {
+  .menu {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ffffff;
+    width: fit-content;
+    display: flex;
+    list-style: none;
+  }
+  a {
+    font-size: 15px;
+  }
+  .login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}

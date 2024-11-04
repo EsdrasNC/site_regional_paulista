@@ -13,13 +13,22 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  /* Design Inspired by one of Stefan Devai's Design on Dribble */
-  
+  @media (max-width: 767px) {
+    .head_page_inicial {
+      background-color: rgba(0, 255, 255, 0);
+      background-image: url(../image/vertical/VERTICAL_MINISTÉRIOS.png);
+      background-position: center;
+      background-size: cover, contain;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100vw;
+    }
+  }
   .main_wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30em;
+    width: 24em;
     height: 30em;
     margin: 0 auto;
   }
